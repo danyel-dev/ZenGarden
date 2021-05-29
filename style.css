@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "julius";
+    src: url("fonts/JuliusSansOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "baskerville";
+    src: url("fonts/GoogleFonts-LibreBaskerville/LibreBaskerville-Italic.ttf");
+}
+
+header.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px 100px 0px;
+}
+
+header.banner h1 {
+    font: 3.2em "julius";
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+header.banner h2 {
+    font-family: "baskerville";
+    color: rgba(0, 0, 0, 0.55);
+}
+
+header.banner h1, h2 {
+    cursor: alias;
+}
+
+div#btn-designs {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+div#btn-designs button {
+    font: 1em "julius";
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 0;
+    padding: 0px 30px;
+    height: 50px;
+    text-transform: uppercase;
+    margin-right: 1px;
+}
+
+@media(max-width: 530px) {
+    header.banner h1 {
+        font: 2.2em "julius";
+    }
+
+    header.banner h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media(max-width: 350px) {
+    header.banner h1 {
+        font: 1.6em "julius";
+    }
+
+    header.banner h2 {
+        font-size: 0.8em;
+    }
+}
