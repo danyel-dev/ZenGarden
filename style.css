@@ -105,40 +105,31 @@ div.main {
     justify-content: center;
 }
 
-aside.sidebar {
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-
 .main-article {
-    margin-bottom: 30px;
     padding: 30px 80px;
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(245, 245, 245, 0.534);
 }
 
 .main-article h3 {
     font: 1.8em "julius";
     text-transform: uppercase;
-    padding: 3px 10px;
-    color: black;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    color: white;
+    margin-bottom: 7px;
 }
 
 .main-article p {
     font: 1.1em "baskerville_2";
     line-height: 30px;
-    margin: 20px 0px;
 }
 
-div.black {
-    background-color: rgba(0, 0, 0, 0.9);
-    color: whitesmoke;
+#zen-participation, #zen-benefits {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
 }
 
-div.black h3 {
-    background-color: white;
-    color: black;
-}
 
 @media(max-width: 1200px) {
     div.flex-pag {
@@ -155,3 +146,15 @@ div.black h3 {
 }
 
 /* main - fim */
+
+
+/* sidebar - inicio */
+
+aside.sidebar {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* sidebar - fim */

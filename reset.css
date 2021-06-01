@@ -3,4 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
     outline: 0;
+    text-decoration: none;
+}
+
+a {
+    color: black;
 }
