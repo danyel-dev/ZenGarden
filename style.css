@@ -8,26 +8,40 @@
     src: url("fonts/GoogleFonts-LibreBaskerville/LibreBaskerville-Italic.ttf");
 }
 
+@font-face {
+    font-family: "baskerville_2";
+    src: url("fonts/GoogleFonts-LibreBaskerville/LibreBaskerville-Regular.ttf");
+}
+
+/* header - inicio */
+
 header.banner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0px 100px 0px;
+    padding: 40px 300px 40px 0px;
+    background-image: url("imagens/ms_jackson.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: black;
+    opacity: 0.95;
 }
 
 header.banner h1 {
     font: 3.2em "julius";
     padding-bottom: 5px;
     text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.75);
 }
 
 header.banner h2 {
     font-family: "baskerville";
-    color: rgba(0, 0, 0, 0.55);
+    padding: 5px 10px;
 }
 
-header.banner h1, h2 {
+header.banner h1, header.banner h2, header.banner button {
+    color: black;
+    background-color: white;
+    opacity: 0.95;
     cursor: alias;
 }
 
@@ -35,13 +49,16 @@ header.banner button {
     font: 0.9em "julius";
     margin-top: 15px;
     border: 0;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.7);
     padding: 15px 30px;
     text-transform: uppercase;
     cursor: pointer;
 }
 
+@media(max-width: 820px) {
+    header.banner {
+        padding: 50px 0px;
+    }
+}
 
 @media(max-width: 530px) {
     header.banner h1 {
@@ -71,3 +88,70 @@ header.banner button {
         padding: 10px 30px;
     }
 }
+
+/* header - fim */
+
+
+/* main - inicio */
+
+div.flex-pag {
+    display: flex;
+}
+
+div.main {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+aside.sidebar {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.main-article {
+    margin-bottom: 30px;
+    padding: 30px 80px;
+}
+
+.main-article h3 {
+    font: 1.8em "julius";
+    text-transform: uppercase;
+    padding: 3px 10px;
+    color: black;
+}
+
+.main-article p {
+    font: 1.1em "baskerville_2";
+    line-height: 30px;
+    margin: 20px 0px;
+}
+
+div.black {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: whitesmoke;
+}
+
+div.black h3 {
+    background-color: white;
+    color: black;
+}
+
+@media(max-width: 1200px) {
+    div.flex-pag {
+        flex-direction: column;
+    }
+
+    div.main {
+        width: 100%;
+    }
+
+    aside.sidebar {
+        width: 100%;
+    }
+}
+
+/* main - fim */
