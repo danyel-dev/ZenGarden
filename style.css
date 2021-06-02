@@ -85,7 +85,9 @@ header.banner button {
 
     header.banner button {
         font-size: 0.6em;
-        padding: 10px 30px;
+        padding: 10px 30px;a {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -101,6 +103,11 @@ div.flex-pag {
 div.main {
     width: 65%;
     margin: 0px auto;
+}
+
+div.main a {
+    text-decoration: underline;
+    color: rgba(0, 0, 255, 0.6);
 }
 
 .main-article {
@@ -124,11 +131,28 @@ div.main {
     line-height: 30px;
 }
 
+p.info-content {
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.466);
+    padding: 100px 0px;
+    font: 2em "baskerville_2";
+    line-height: 60px !important;
+}
+
 #zen-participation, #zen-benefits {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
 
+#zen-participation a, #zen-benefits a {
+    text-decoration: underline;
+    color: rgba(245, 245, 245, 0.6);
+}
+
+#zen-participation a:hover, #zen-benefits a:hover {
+    color: rgba(245, 245, 245, 0.4);
+}
 
 @media(max-width: 1200px) {
     div.flex-pag {
@@ -209,6 +233,7 @@ div.zen-resources li {
 div.zen-resources li a {
     font: normal 1.4em "baskerville";
     color: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid black;
 }
 
 @media(max-width: 1200px) {
